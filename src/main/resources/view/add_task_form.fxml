@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="461.0" prefWidth="313.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.AddTaskFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00004b" height="86.0" layoutX="-7.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+      <Label layoutX="97.0" layoutY="26.0" text="ADD Task" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtTitle" focusColor="#00004b" layoutX="61.0" layoutY="108.0" prefHeight="27.0" prefWidth="182.0" promptText="Title" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="txaDescription" layoutX="60.0" layoutY="160.0" prefHeight="121.0" prefWidth="190.0" promptText="Description" unFocusColor="BLACK" />
+      <DatePicker fx:id="dateDueDate" layoutX="59.0" layoutY="326.0" prefHeight="25.0" prefWidth="190.0" promptText="DueDate" />
+      <JFXButton layoutX="60.0" layoutY="393.0" onAction="#btnAddTodoOnAction" prefHeight="27.0" prefWidth="126.0" style="-fx-background-color: #00004b;" text=" + Add Todo" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
